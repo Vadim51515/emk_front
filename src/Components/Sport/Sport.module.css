@@ -1,0 +1,19 @@
+.sport{
+    margin-top: 130px;
+}
+.cupsBox{
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+h1{
+    width: max-content;
+}
+.cupsImg{
+    width: 500px;
+}
+.sportText{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
