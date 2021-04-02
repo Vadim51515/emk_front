@@ -1,7 +1,7 @@
 import { React } from 'react';
 import styles from './MainPage.module.css'
-import { NavLink } from 'react-router-dom';
-import ScrollableAnchor from 'react-scrollable-anchor'
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 const MainPage = () => {
     const mainPage = [
         "Уникальность нашего образовательного учреждения сформировалось ещё в 1952 году",
@@ -30,7 +30,6 @@ const MainPage = () => {
                         </div>
                     )
                 })}
-                 <a href='#section1'> Go to section 1 </a>
             </div>
             <hr style={{ marginBottom: 30 }} />
             <div>
@@ -51,6 +50,14 @@ const MainPage = () => {
                     />
 
                 </div>
+                {/* <div style={{width:800}}>
+                <AwesomeSlider>
+    <div data-src="./img/slide_1.png" />
+    <div data-src="./img/slide_1.png" />
+    <div data-src="./img/slide_1.png" />
+  </AwesomeSlider>
+                </div> */}
+
                 <hr style={{ marginTop: 30, marginBottom: 30 }} />
                 <h1>История колледжа</h1>
                 <p className={styles.history_1}>История Екатеринбургского монтажного колледжа началась с 25 сентября 1929 года, когда
@@ -151,6 +158,11 @@ const MainPage = () => {
             {/* <p><a href="/specialties/#top">Наверх</a></p> */}
             <p className={styles.imgHistoryText}>Студенты монтажного колледжа – победители регионального 
             этапа WorldSkills Russia - 2018</p>
+            <hr style={{marginBottom:30, marginTop:30}}/>
+            <h1>Адрес колледжа: г. Екатеринбург, ул. Декабристов, 83</h1>
+            <div className={styles.map}>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17474.18672493582!2d60.5187758!3d56.8069407!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16ee95674b35d%3A0xaed17539b6181196!2z0JPQkNCf0J7QoyDQodCeICLQldC60LDRgtC10YDQuNC90LHRg9GA0LPRgdC60LjQuSDQvNC-0L3RgtCw0LbQvdGL0Lkg0LrQvtC70LvQtdC00LYi!5e0!3m2!1sru!2sru!4v1617216727563!5m2!1sru!2sru" width="800" height="600" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
     )
 }

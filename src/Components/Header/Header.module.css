@@ -1,5 +1,5 @@
 .header{
-    background: #5F727F;
+    background: #107C10;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2),
      0px 2px 10px rgba(0, 0, 0, 0.08),
       0px 1px 1px rgba(0, 0, 0, 0.16);
@@ -13,11 +13,49 @@
     width: 100px;
     
 }
+.emkBox{
+    display: flex;
+    margin-top: 10px;
+}
+.emkText{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.telephoneImg{
+    width: 40px;
+    height: 40px;
+    margin-left: 25px;
+}
+.placeMarker{
+    width: 45px;
+    height: 45px;
+    margin-left: 25px;
+}
+.placeMarkerLink{
+    width: 120px;
+}
+.socNetwork{
+    display: flex;
+    width: max-content;
+    margin-left: auto;
+    margin-right: 15px;
+}
+.socNetworkVk{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+.socNetworkYouTube{
+    width: 50px;
+    margin-left: 5px;
+}
 .info{
     display: flex;
     margin-left: auto;
     width: max-content;
-
+    margin-bottom: 5px;
 }
 a{
     text-decoration: none;
@@ -31,10 +69,10 @@ a{
     cursor: pointer;
 }
 .aboutUs:hover {
-color: lightsteelblue;
+color: #a19f9f;
 }
 .active{
-color: lightsteelblue;
+color: #a19f9f;
 
 }
 .specName{
@@ -44,7 +82,7 @@ color: lightsteelblue;
     color: white;
 }
 .spec{
-    background: #5F727F;
+    background: #3D9C3D;
     position: absolute;
     display: grid;
     width: min-content;
@@ -53,8 +91,60 @@ color: lightsteelblue;
     padding: 10px;
     right: 5px;
 }
-.specBox{
+.headerForMobile{
+    display: none;
 }
 .pos{
     position: relative;
 }
+.phoneMenu{
+    overflow-y: auto;
+    position: fixed;
+    width: 100%;
+    background: #5F727F;
+    border-radius: 16px 16px 0 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.fon{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,.32);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+@media (max-width: 700px) {
+    .info{
+        display: none;
+
+    }
+    .header{
+        display: flex;
+    }
+    .headerForMobile{
+        display: block;
+        margin-left: auto;
+        width: 30px;
+        height: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        cursor: pointer;
+    }
+    .aboutUs{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+    }
+    @media (max-width: 500px) {
+        .logo{
+            width: 70px;
+            
+        }
+    }

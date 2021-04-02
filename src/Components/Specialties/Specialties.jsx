@@ -1,14 +1,7 @@
-import React, { useEffect } from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor'
+import React from 'react';
 import styles from './Specialties.module.css'
-import { goToAnchor } from 'react-scrollable-anchor'
-const Specialties = (props) => {
 
-    useEffect(() => {
-        goToAnchor('section1', false)
-        console.log(123456);
-      }, []);
-  
+const Specialties = (props) => {
     const Specialtie = (props) => {
         return (
             <div className={styles.specialtieBox}>
@@ -156,9 +149,6 @@ const Specialties = (props) => {
                 измерения, контроля, испытания и регулирования технологических процессов.              
                 '
             />
-                        <ScrollableAnchor id={'section1'}>
-          <div> Hello World </div>
-        </ScrollableAnchor>
             <hr style={{marginTop:30, marginBottom:30}}/>
             <h1>Прикладная геология, горное дело, нефтегазовое дело и геодезия</h1>
             <hr style={{marginTop:30, marginBottom:30}}/>

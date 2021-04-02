@@ -8,6 +8,8 @@
 }
 h1{
     width: max-content;
+    max-width: 100%;
+    text-align: center;
 }
 .cupsImg{
     width: 500px;
@@ -16,4 +18,20 @@ h1{
     margin-left: auto;
     margin-right: auto;
     width: 600px;
+}
+@media (max-width: 620px) {
+    .cupsImg{
+        width: 300px;
+    }
+    .sportText{
+        width: 350px;
+    }
+}
+@media (max-width: 380px) {
+    .cupsImg{
+        width: 250px;
+    }
+    .sportText{
+        width: 300px;
+    }
 }

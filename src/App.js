@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Components/Header/Header.jsx'
 import MainPage from './Components/MainPage/MainPage';
 import Footer from './Components/Footer/Footer';
-import { BrowserRouter, Redirect, Route, Router, Switch, withRouter } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import Specialties from './Components/Specialties/Specialties';
 import { connect } from 'react-redux';
 import { initApp } from './Redux/AppReducer';
@@ -10,34 +10,33 @@ import Sport from './Components/Sport/Sport';
 import News from './Components/News/News';
 import Feedback from './Components/Feedback/Feedback';
 
-
 function App(props) {
   if (!props.init) {
-    <Redirect to="/main"/>
+    <Redirect to="/main" />
     props.initApp()
   }
-  console.log(props);
   return (
     <div className="App">
       <Header />
       <Switch>
-      <Route path='/specialties' render={() =><Specialties/> } />
-      <Route path='/sport' render={() => <Sport/> } />
-      <Route path='/news' render={() => <News/>} />
-      <Route path='/' render={() => <MainPage/>} />
+        <Route path='/specialties' render={() => <Specialties />} />
+        <Route path='/sport' render={() => <Sport />} />
+        <Route path='/news' render={() => <News />} />
+        <Route path='/' render={() => <MainPage />} />
       </Switch>
-      <Footer/>
+      <Footer />
       <Feedback />
+
     </div>
-    
+
   );
 }
-  const mapStateToProps = state => {
-    return {
-      init: state.appReducer.init,
+const mapStateToProps = state => {
+  return {
+    init: state.appReducer.init,
 
-    };
   };
-export default connect(mapStateToProps,{initApp}) (App);
+};
+export default connect(mapStateToProps, { initApp })(App);
 
 

@@ -1,9 +1,15 @@
 .footer{
-    background: #5F727F;
+    background: #107C10;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2),
      0px 2px 10px rgba(0, 0, 0, 0.08),
       0px 1px 1px rgba(0, 0, 0, 0.16);
       margin-top: 10px;
+}
+.footerHeading{
+    max-width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
 h5{
     margin: 0;
@@ -12,5 +18,10 @@ h5{
     margin-left: auto;
     margin-right: auto;
     width: max-content;
-    color: lightsteelblue;
+    color: white;
+}
+@media (max-width: 400px) {
+    .footerHeading{
+        font-size: 16px;
+    }
 }
