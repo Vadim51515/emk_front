@@ -6,7 +6,7 @@ import { setFeedback } from '../../Redux/AppReducer';
 const Feedback = (props) => {
     return (
         <>
-        <div className={styles.feedback} onClick={(e)=>{props.setFeedback(true)}}></div>
+        <img className={styles.feedback} src='./img/message.png' onClick={(e)=>{props.setFeedback(true)}}></img>
         {props.feedback &&
         <FeedbackPopup />
         }

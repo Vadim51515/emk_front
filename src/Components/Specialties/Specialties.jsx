@@ -8,7 +8,10 @@ const Specialties = (props) => {
                 <h3 className={styles.specialtieHeading}>{props.heading}</h3>
                 <div>
                     <div className={styles.specialtieImgBox}> 
-                        <img className={styles.specialtieImg} src={'./img/' + props.url} />
+                        <img 
+                        className={styles.specialtieImg} 
+                        src={'./img/' + props.url} 
+                        />
                     </div>
                     <p className={styles.specialtieText}><b>Область профессиональной деятельности выпускников:</b> {props.text}</p>
                 </div>

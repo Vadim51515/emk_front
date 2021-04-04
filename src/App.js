@@ -9,6 +9,7 @@ import { initApp } from './Redux/AppReducer';
 import Sport from './Components/Sport/Sport';
 import News from './Components/News/News';
 import Feedback from './Components/Feedback/Feedback';
+import Login from './Components/Login/Login';
 
 function App(props) {
   if (!props.init) {
@@ -22,6 +23,7 @@ function App(props) {
         <Route path='/specialties' render={() => <Specialties />} />
         <Route path='/sport' render={() => <Sport />} />
         <Route path='/news' render={() => <News />} />
+        <Route path='/login' render={() => <Login />} />
         <Route path='/' render={() => <MainPage />} />
       </Switch>
       <Footer />

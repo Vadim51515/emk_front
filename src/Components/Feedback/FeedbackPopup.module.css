@@ -34,7 +34,8 @@
 }
 .comment{
     max-width: 390px;
-    max-height: 300px
+    max-height: 300px;
+    margin-bottom: 20px;
 }
 .button{
     margin-top: 5px;
@@ -45,4 +46,16 @@
 }
 .error{
     color: red;
+}
+input{
+    padding: 5px;
+}
+button{
+    border-radius: 6px;
+}
+@media (max-width: 430px) {
+
+    .popup{
+        width: 300px;
+    }
 }

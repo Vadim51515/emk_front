@@ -3,6 +3,8 @@ const SET_FEEDBACK = 'SET_FEEDBACK'
 let initialState = {
   init: false,
   feedback:false,
+  login:'user',
+  password:'password'
 };
 
 const AppReducer = (state = initialState, action) => {

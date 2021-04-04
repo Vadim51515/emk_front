@@ -4,7 +4,7 @@
      0px 2px 10px rgba(0, 0, 0, 0.08),
       0px 1px 1px rgba(0, 0, 0, 0.16);
      position: fixed;
-     z-index: 1;
+     z-index: 3;
      top: 0;
      left: 0;
      width: 100%;
@@ -119,6 +119,19 @@ color: #a19f9f;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
 }
+@media (max-width: 1040px) {
+    .weSoc{
+        display: none;
+    }
+}
+@media (max-width: 830px) {
+    .placeMarker{
+        display: none;
+    }
+    .placeMarkerLink{
+        display: none;
+    }
+}
 @media (max-width: 700px) {
     .info{
         display: none;
@@ -142,9 +155,20 @@ color: #a19f9f;
         margin-left: 15px;
     }
     }
+    @media (max-width: 630px) {
+        .telephoneImg,
+        .number{
+            display: none;
+        }
+    }
     @media (max-width: 500px) {
         .logo{
             width: 70px;
             
+        }
+    }
+    @media (max-width: 360px) {
+        .socNetworkYouTube{
+            display: none;
         }
     }
