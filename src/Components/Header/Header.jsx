@@ -97,7 +97,16 @@ const Header = () => {
                     to='/news'>
                     Новости
                     </NavLink>
+                    { localStorage.getItem('admin') == "true" &&
+            <NavLink
+            className={styles.aboutUs}
+            activeClassName={styles.active}
+            to='/applications'>
+            Заявки
+            </NavLink>
+            }
             </div>
+            
             <div className={styles.headerForMobile}>
                 <img
                     alt='меню'

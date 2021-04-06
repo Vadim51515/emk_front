@@ -10,6 +10,7 @@ import Sport from './Components/Sport/Sport';
 import News from './Components/News/News';
 import Feedback from './Components/Feedback/Feedback';
 import Login from './Components/Login/Login';
+import Application from './Components/Feedback/Application/Application';
 
 function App(props) {
   if (!props.init) {
@@ -24,6 +25,7 @@ function App(props) {
         <Route path='/sport' render={() => <Sport />} />
         <Route path='/news' render={() => <News />} />
         <Route path='/login' render={() => <Login />} />
+        <Route path='/applications' render={() => <Application />} />
         <Route path='/' render={() => <MainPage />} />
       </Switch>
       <Footer />
